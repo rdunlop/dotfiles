@@ -43,6 +43,11 @@ namespace :install do
     `chsh -s $(which zsh)`
   end
 
+  desc "Set up some mac os settings"
+  task :mac_os_settings do
+    `./.macos`
+  end
+
   desc "Install dotfiles into user’s home directory"
   task dotfiles: %i[set_zsh check] do
     always_replace = false

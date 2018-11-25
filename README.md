@@ -63,6 +63,7 @@ Run one of the three installation options:
     rake install:link_sublime    # Sym-link/install SublimeText configurations
     rake install:dotfiles        # Install the dotfiles and scripts
     rake install:rvm             # Install ruby version manager
+    rake install:mac_os_settings # set up some nice-to-configure mac settings
     rake install                 # Install all of the above (recommended)
 
 
