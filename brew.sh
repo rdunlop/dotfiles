@@ -49,8 +49,7 @@ brew install p7zip
 brew install tree
 brew install vbindiff
 
-tap 'heroku/brew'
-brew install heroku
+brew install heroku/brew/heroku
 
 # Install tools that I use a lot
 brew cask install '1password'
