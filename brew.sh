@@ -63,7 +63,6 @@ brew cask install 'sublime-text'
 brew cask install 'tripmode'
 brew cask install 'phantomjs'
 brew cask install 'flux'
-brew install keybase
 
 # Remove outdated versions from the cellar.
 brew cleanup
