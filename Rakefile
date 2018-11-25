@@ -69,8 +69,12 @@ namespace :install do
 
   desc "Install spectacle configuration"
   task :link_spectacles do
+    log(:blue, "removing existing config")
+    target_file = File.expand_path("~/Library/Application\ Support/Spectacle/Shortcuts.json")
+    FileUtils.rm(target_file)
+    source_config = File.join(File.dirname(__FILE__), "init/spectacle.json")
     log(:blue, "linking spectacle config")
-    FileUtils.ln_s("init/spectacle.json", "~/Library/Application\ Support/Spectacle/Shortcuts.json")
+    FileUtils.ln_s(source_config, target_file)
   end
 
   desc "Symlink the Sublime Packages/User directory"
