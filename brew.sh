@@ -2,7 +2,8 @@
 
 # Install command-line tools using Homebrew.
 
-set -e
+# Echo the commands while they are executed
+set -x
 
 # Make sure we’re using the latest Homebrew.
 brew update
