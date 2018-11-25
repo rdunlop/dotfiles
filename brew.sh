@@ -48,6 +48,7 @@ brew install imagemagick --with-webp
 brew install p7zip
 brew install tree
 brew install vbindiff
+brew install nvm
 
 brew install heroku/brew/heroku
 
