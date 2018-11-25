@@ -19,7 +19,7 @@ DOTFILES = %w(
   zsh
 )
 
-task default: "install:dotfiles"
+task default: "install:all"
 
 desc "Warn if git origin is newer"
 task :check do
@@ -29,14 +29,17 @@ task :check do
 end
 
 namespace :install do
+
+  desc "install everything"
+  task all: %i[rvm dotfiles]
+
   desc "install brew packages"
   task :brew do
     `./brew.sh`
   end
 
   desc "Install dotfiles into user’s home directory"
-  # task dotfiles: %i[link_sublime check] do
-  task :dotfiles do
+  task dotfiles: %i[link_sublime check] do
     always_replace = false
 
     Dotfile.each do |dotfile|
@@ -56,6 +59,12 @@ namespace :install do
         end
       end
     end
+  end
+
+  desc "Install rvm"
+  task :rvm do
+    `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB`
+    `\curl -sSL https://get.rvm.io | bash -s stable`
   end
 
   desc "Install spectacle configuration"
