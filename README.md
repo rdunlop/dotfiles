@@ -27,7 +27,7 @@ The goal is to make it easy to re-create my development environment on new syste
 * nvm/node
 * heroku toolchain
 * chef
-* aws
+* aws (not working yet)
 
 ## Configurations
 
