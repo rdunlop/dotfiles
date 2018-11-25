@@ -1,0 +1,34 @@
+{
+	"default_encoding": "UTF-8",
+	"default_line_ending": "unix",
+	"detect_indentation": false,
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".terraform",
+		".bundle",
+		"node_modules"
+	],
+	"font_size": 15,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"index_exclude_patterns":
+	[
+		"*.log",
+		".bundle/*",
+		".terraform/*"
+	],
+	"save_on_focus_lost": true,
+	"show_full_path": true,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}

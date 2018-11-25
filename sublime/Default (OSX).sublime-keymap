@@ -1,0 +1,18 @@
+[
+  { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
+
+    // auto-indent
+  {"keys": ["alt+shift+f"], "command": "reindent", "args": {"single_line": false}},
+  //Git conflict resolver keybindings
+  { "keys": ["ctrl+alt+f"], "command": "find_next_conflict" },
+  //{ "keys": ["ctrl+alt+o"], "command": "keep_ours", "args": { "keep": "ours" } },
+  //{ "keys": ["ctrl+alt+t"], "command": "keep_theirs", "args": { "keep": "theirs" } },
+  //{ "keys": ["ctrl+alt+a"], "command": "keep_ancestor", "args": { "keep": "ancestor" } },
+  { "keys": ["ctrl+alt+c"], "command": "list_conflict_files" },
+
+  // Use smarter paste by default
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["super+shift+v"], "command": "paste" }
+  //{ "keys": ["super+shift+r"], "command": "reindent" }
+]

@@ -1,0 +1,28 @@
+# Unix
+alias ll="ls -al"
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+alias e="$EDITOR"
+alias v="$VISUAL"
+
+# Bundler
+alias b="bundle"
+alias be="bundle exec "
+
+# Rails
+alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
+alias s="rspec"
+
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
+
+alias mysqlclean='sudo rm -f /usr/local/var/mysql/Robins-MacBook-Pro.local.err'
+# alias mysqlstart='/usr/local/Cellar/mysql/5.6.17_1/bin/mysql.server start'
+# alias mysqlstop='/usr/local/Cellar/mysql/5.6.17_1/bin/mysql.server stop'
+alias mysqlstart='/usr/local/bin/mysql.server start'
+alias mysqlstop='/usr/local/bin/mysql.server stop'
+alias uni="cd $PERSONAL_PROJECTS_DIR/unicycling-registration"
+alias gitzombie='git branch --merged develop | grep -v '\*\|master\|develop' | xargs -n 1 git branch -d'

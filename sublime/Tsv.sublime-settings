@@ -1,0 +1,12 @@
+// These settings override both User and Default settings for the Tsv syntax
+{
+  // Trims white space added by auto_indent when moving the caret off the
+  // line.
+  "trim_automatic_white_space": false,
+
+  // Set to true to insert spaces when tab is pressed
+  "translate_tabs_to_spaces": false,
+
+  // Set to true to removing trailing white space on save
+  "trim_trailing_white_space_on_save": false,
+}
