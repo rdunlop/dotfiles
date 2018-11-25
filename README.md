@@ -42,16 +42,28 @@ The goal is to make it easy to re-create my development environment on new syste
 
 # Installation
 
-    git clone https://github.com/rdunlop/dotfiles.git
-    cd dotfiles
+  * install git by running `git`, and having os X prompt you to install it
+  * install brew from https://brew.sh
+  * install 1password with `brew cask install 1password`
+  * install keybase with `brew cask install keybase`
+    * Login to keybase, using an existing device for authentication
+    * In Keybase-Settings, enable the "Files" feature, to mount the Keybase filesystem
+    * `cd /Keybase/private/robindunlop`
+    * Install the ssh keys with `cd ssh_config && install.sh`
+    * Install the ssh keys with `cd aws_config && install.sh`
+  * download this repo
+    * `cd ~/`
+    * `git clone https://github.com/rdunlop/dotfiles.git`
+    * `cd dotfiles`
 
 Run one of the three installation options:
 
-    rake install:dotfiles # Install the dotfiles and scripts
-    rake install:spectacles # Install Spectacles.app config
-    rake install:link_sublime # Sym-link/install SublimeText configurations
-    rake install:brew      # Install homebrew packages and Mac defaults
-    rake install          # Install all of the above (recommended)
+    rake install:dotfiles        # Install the dotfiles and scripts
+    rake install:link_spectacles # Install Spectacles.app config
+    rake install:link_sublime    # Sym-link/install SublimeText configurations
+    rake install:brew            # Install homebrew packages and Mac defaults
+    rake install:rvm             # Install ruby version manager
+    rake install                 # Install all of the above (recommended)
 
 
 ## Configuration
@@ -59,7 +71,7 @@ Run one of the three installation options:
 1. Set up 1Password manager by using an existing 1password app (on your phone, for example), sync passwords.
 1. Set up Keybase running `keybase login`
 1. run `/Keybase/private/robindunlop/ssh_config/install.sh` to install the ssh keys
-1. run `/Keybase/private/robindunlop/aws_config/  install.sh` to install the ssh keys
+1. run `/Keybase/private/robindunlop/aws_config/install.sh` to install the ssh keys
 
 ### macOS defaults
 
