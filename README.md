@@ -36,9 +36,8 @@ The goal is to make it easy to re-create my development environment on new syste
 
 ## Reminders
 
-* Install the ssh keys for my various needs
+* Install the ssh keys for my various needs from keybase
 * Install the VPN for Table XI
-
 
 # Installation
 
@@ -66,6 +65,9 @@ Run one of the three installation options:
     rake install:mac_os_settings # set up some nice-to-configure mac settings
     rake install                 # Install all of the above (recommended)
 
+Remap the Caps-lock key to Escape:
+
+  * https://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x/40254864#40254864
 
 ## Configuration
 
