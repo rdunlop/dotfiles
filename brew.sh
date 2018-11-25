@@ -2,11 +2,15 @@
 
 # Install command-line tools using Homebrew.
 
+set -e
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
 # Upgrade any already-installed formulae.
 brew upgrade
+
+brew cask upgrade
 
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
