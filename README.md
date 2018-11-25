@@ -58,10 +58,10 @@ The goal is to make it easy to re-create my development environment on new syste
 
 Run one of the three installation options:
 
-    rake install:dotfiles        # Install the dotfiles and scripts
+    rake install:brew            # Install homebrew packages and Mac defaults
     rake install:link_spectacles # Install Spectacles.app config
     rake install:link_sublime    # Sym-link/install SublimeText configurations
-    rake install:brew            # Install homebrew packages and Mac defaults
+    rake install:dotfiles        # Install the dotfiles and scripts
     rake install:rvm             # Install ruby version manager
     rake install                 # Install all of the above (recommended)
 

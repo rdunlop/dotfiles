@@ -34,12 +34,12 @@ namespace :install do
   task all: %i[rvm dotfiles]
 
   desc "install brew packages"
-  task :brew do
+  task brew: %i[check] do
     `./brew.sh`
   end
 
   desc "Install dotfiles into user’s home directory"
-  task dotfiles: %i[link_sublime check] do
+  task dotfiles: %i[check] do
     always_replace = false
 
     Dotfile.each do |dotfile|
