@@ -13,10 +13,11 @@
 		".bundle",
 		"node_modules"
 	],
-	"font_size": 15,
+	"font_size": 18,
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"A File Icon",
 		"Vintage"
 	],
 	"index_exclude_patterns":

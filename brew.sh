@@ -49,6 +49,7 @@ brew install p7zip
 brew install tree
 brew install vbindiff
 brew install nvm
+brew install circleci
 
 brew install heroku/brew/heroku
 
@@ -64,6 +65,7 @@ brew cask install 'sublime-text'
 brew cask install 'tripmode'
 brew cask install 'phantomjs'
 brew cask install 'flux'
+brew cask install 'nozbe'
 
 # Remove outdated versions from the cellar.
 brew cleanup

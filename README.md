@@ -16,7 +16,8 @@ The goal is to make it easy to re-create my development environment on new syste
 * SublimeText 3
 * Keybase (not working yet)
 * Docker (not working yet)
-* Nozbe (Not working yet)
+* Nozbe
+* CircleCI commandline tool
 
 ## Command-line tools
 
@@ -68,6 +69,10 @@ Run one of the three installation options:
 Remap the Caps-lock key to Escape:
 
   * https://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x/40254864#40254864
+
+## Sublime Text Troubleshooting
+
+If the Sublime Text packages do not appear to be working, install the "Package Control" package, and then they should start working.
 
 ## Configuration
 
