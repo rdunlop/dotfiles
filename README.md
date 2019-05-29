@@ -40,6 +40,15 @@ The goal is to make it easy to re-create my development environment on new syste
 * Install the ssh keys for my various needs from keybase
 * Install the VPN for Table XI
 
+# Before Installation:
+
+* In System Preferences -> Security & Privacy
+  - ensure that “Allow apps downloaded from ‘App Store and identified developers’” is chosen.
+  - Ensure that if you leave this page, and return, the setting stays chosen.
+    - if not, you may need to reinstall Mac OS
+* Run `brew doctor` and resolve any issues with folders / permissions
+* Run `brew install gnupg gnupg2`
+
 # Installation
 
   * install git by running `git`, and having os X prompt you to install it
@@ -49,8 +58,8 @@ The goal is to make it easy to re-create my development environment on new syste
     * Login to keybase, using an existing device for authentication
     * In Keybase-Settings, enable the "Files" feature, to mount the Keybase filesystem
     * `cd /Keybase/private/robindunlop`
-    * Install the ssh keys with `cd ssh_config && install.sh`
-    * Install the ssh keys with `cd aws_config && install.sh`
+    * Install the ssh keys with `cd ssh_config && ./install.sh`
+    * Install the ssh keys with `cd aws_config && ./install.sh`
   * download this repo
     * `cd ~/`
     * `git clone https://github.com/rdunlop/dotfiles.git`
@@ -64,7 +73,7 @@ Run one of the three installation options:
     rake install:dotfiles        # Install the dotfiles and scripts
     rake install:rvm             # Install ruby version manager
     rake install:mac_os_settings # set up some nice-to-configure mac settings
-    rake install                 # Install all of the above (recommended)
+    rake install:all             # Install all of the above (recommended)
 
 Remap the Caps-lock key to Escape:
 
