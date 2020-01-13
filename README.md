@@ -38,7 +38,7 @@ The goal is to make it easy to re-create my development environment on new syste
 ## Reminders
 
 * Install the ssh keys for my various needs from keybase
-* Install the VPN for Table XI
+* Install the VPN for Table XI (ref: https://github.com/tablexi/handbook/blob/master/guides/shared_and_vpn.md)
 
 # Before Installation:
 
