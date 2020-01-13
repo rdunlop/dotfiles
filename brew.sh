@@ -51,6 +51,11 @@ brew install vbindiff
 brew install nvm
 brew install circleci
 
+# Kubernetes tools
+brew install kubectl
+brew install kubectx
+brew install aws-iam-authenticator
+
 brew install heroku/brew/heroku
 
 # Install tools that I use a lot
