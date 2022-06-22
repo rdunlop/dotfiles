@@ -38,7 +38,6 @@ The goal is to make it easy to re-create my development environment on new syste
 ## Reminders
 
 * Install the ssh keys for my various needs from keybase
-* Install the VPN for Table XI (ref: https://github.com/tablexi/handbook/blob/master/guides/shared_and_vpn.md)
 
 # Before Installation:
 
@@ -46,15 +45,15 @@ The goal is to make it easy to re-create my development environment on new syste
   - ensure that “Allow apps downloaded from ‘App Store and identified developers’” is chosen.
   - Ensure that if you leave this page, and return, the setting stays chosen.
     - if not, you may need to reinstall Mac OS
-* Run `brew doctor` and resolve any issues with folders / permissions
-* Run `brew install gnupg gnupg2`
 
 # Installation
 
   * install git by running `git`, and having os X prompt you to install it
   * install brew from https://brew.sh
-  * install 1password with `brew cask install 1password`
-  * install keybase with `brew cask install keybase`
+  * Run `brew doctor` and resolve any issues with folders / permissions
+  * Run `brew install gnupg gnupg2`
+  * install 1password with `brew install --cask 1password`
+  * install keybase with `brew install --cask keybase`
     * Login to keybase, using an existing device for authentication
     * In Keybase-Settings, enable the "Files" feature, to mount the Keybase filesystem
     * `cd /Keybase/private/robindunlop`
@@ -68,7 +67,7 @@ The goal is to make it easy to re-create my development environment on new syste
 Run one of the three installation options:
 
     rake install:brew            # Install homebrew packages and Mac defaults
-    rake install:link_spectacles # Install Spectacles.app config
+    rake install:link_spectacles # Install Spectacles.app config (NOTE: Open spectacle app once first)
     rake install:link_sublime    # Sym-link/install SublimeText configurations
     rake install:dotfiles        # Install the dotfiles and scripts
     rake install:rvm             # Install ruby version manager

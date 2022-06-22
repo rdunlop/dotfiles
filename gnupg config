@@ -1,0 +1,12 @@
+gnupg config
+In order to install rvm:
+
+https://github.com/rvm/rvm/issues/4215
+- need to cerate a "~/.gnupg/dirmngr.conf" file with "disable-ipv6" contents.
+
+Need to install `brew install sha2` in order to install the `sha256sum` method, needed by the rvm install command for ruby.
+
+
+After installing rvm, run `rvm autolibs rvm_pkg` before installing the ruby version.
+
+and `rvm pkg install openssl` ?
